@@ -1,0 +1,618 @@
+Lambda Execution Result (Latest Run):
+=== Experiment Output ===
+
+================================================================================
+
+FINAL EXPERIMENT RESULTS
+
+================================================================================
+
+COVARIATE SHIFT RESULTS:
+
+--------------------------------------------------
+
+(ε=0.1, ρ=0.05): Coverage=0.818, Width=3.992
+
+(ε=0.1, ρ=0.1): Coverage=0.977, Width=7.705
+
+(ε=0.1, ρ=0.2): Coverage=0.977, Width=7.705
+
+(ε=0.5, ρ=0.05): Coverage=0.889, Width=4.792
+
+(ε=0.5, ρ=0.1): Coverage=0.977, Width=7.705
+
+(ε=0.5, ρ=0.2): Coverage=0.977, Width=7.705
+
+(ε=1.0, ρ=0.05): Coverage=0.928, Width=5.792
+
+(ε=1.0, ρ=0.1): Coverage=0.977, Width=7.705
+
+(ε=1.0, ρ=0.2): Coverage=0.977, Width=7.705
+
+BEST CONFIG: ε=0.5, ρ=0.05
+
+Coverage: 0.889, Interval Width: 4.792
+
+LABEL SHIFT RESULTS:
+
+--------------------------------------------------
+
+(ε=0.1, ρ=0.05): Coverage=0.958, Width=3.992
+
+(ε=0.1, ρ=0.1): Coverage=1.000, Width=7.705
+
+(ε=0.1, ρ=0.2): Coverage=1.000, Width=7.705
+
+(ε=0.5, ρ=0.05): Coverage=0.978, Width=4.792
+
+(ε=0.5, ρ=0.1): Coverage=1.000, Width=7.705
+
+(ε=0.5, ρ=0.2): Coverage=1.000, Width=7.705
+
+(ε=1.0, ρ=0.05): Coverage=0.994, Width=5.792
+
+(ε=1.0, ρ=0.1): Coverage=1.000, Width=7.705
+
+(ε=1.0, ρ=0.2): Coverage=1.000, Width=7.705
+
+BEST CONFIG: ε=0.1, ρ=0.05
+
+Coverage: 0.958, Interval Width: 3.992
+
+MIXED SHIFT RESULTS:
+
+--------------------------------------------------
+
+(ε=0.1, ρ=0.05): Coverage=0.871, Width=3.992
+
+(ε=0.1, ρ=0.1): Coverage=0.997, Width=7.705
+
+(ε=0.1, ρ=0.2): Coverage=0.997, Width=7.705
+
+(ε=0.5, ρ=0.05): Coverage=0.925, Width=4.792
+
+(ε=0.5, ρ=0.1): Coverage=0.997, Width=7.705
+
+(ε=0.5, ρ=0.2): Coverage=0.997, Width=7.705
+
+(ε=1.0, ρ=0.05): Coverage=0.962, Width=5.792
+
+(ε=1.0, ρ=0.1): Coverage=0.997, Width=7.705
+
+(ε=1.0, ρ=0.2): Coverage=0.997, Width=7.705
+
+BEST CONFIG: ε=0.1, ρ=0.05
+
+Coverage: 0.871, Interval Width: 3.992
+
+================================================================================
+
+COMPARISON WITH STANDARD CONFORMAL PREDICTION
+
+================================================================================
+
+COVARIATE SHIFT:
+
+Standard CP: Coverage=0.725, Width=3.102
+
+Best LP Robust: Coverage=0.889, Width=4.792
+
+Improvement: Coverage +0.164, Width Ratio: 1.544
+
+LABEL SHIFT:
+
+Standard CP: Coverage=0.852, Width=3.102
+
+Best LP Robust: Coverage=0.958, Width=3.992
+
+Improvement: Coverage +0.106, Width Ratio: 1.287
+
+MIXED SHIFT:
+
+Standard CP: Coverage=0.786, Width=3.102
+
+Best LP Robust: Coverage=0.871, Width=3.992
+
+Improvement: Coverage +0.085, Width Ratio: 1.287
+
+=== Experiment Errors ===
+
+2025-09-30 01:48:53,783 - INFO - Starting LP Robust Conformal Prediction Experiment for Time Series
+
+2025-09-30 01:48:54,497 - INFO - Generating stationary calibration data...
+
+2025-09-30 01:48:54,498 - INFO - 
+
+Testing covariate shift...
+
+2025-09-30 01:48:54,745 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958
+
+2025-09-30 01:48:54,745 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.818, Width=3.992
+
+2025-09-30 01:48:54,745 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,745 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,745 - INFO -   epsilon=0.1, rho=0.1: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,745 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,745 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,746 - INFO -   epsilon=0.1, rho=0.2: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958
+
+2025-09-30 01:48:54,746 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.889, Width=4.792
+
+2025-09-30 01:48:54,746 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,746 - INFO -   epsilon=0.5, rho=0.1: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,746 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,746 - INFO -   epsilon=0.5, rho=0.2: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958
+
+2025-09-30 01:48:54,746 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.928, Width=5.792
+
+2025-09-30 01:48:54,746 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,747 - INFO -   epsilon=1.0, rho=0.1: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,747 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,747 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,747 - INFO -   epsilon=1.0, rho=0.2: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,747 - INFO - 
+
+Testing label shift...
+
+2025-09-30 01:48:54,747 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958
+
+2025-09-30 01:48:54,747 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.958, Width=3.992
+
+2025-09-30 01:48:54,747 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,748 - INFO -   epsilon=0.1, rho=0.1: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,748 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,748 - INFO -   epsilon=0.1, rho=0.2: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958
+
+2025-09-30 01:48:54,748 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.978, Width=4.792
+
+2025-09-30 01:48:54,748 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,748 - INFO -   epsilon=0.5, rho=0.1: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,748 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,748 - INFO -   epsilon=0.5, rho=0.2: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958
+
+2025-09-30 01:48:54,748 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.994, Width=5.792
+
+2025-09-30 01:48:54,749 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,750 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,750 - INFO -   epsilon=1.0, rho=0.1: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,750 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,750 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,750 - INFO -   epsilon=1.0, rho=0.2: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,750 - INFO - 
+
+Testing mixed shift...
+
+2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958
+
+2025-09-30 01:48:54,751 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.871, Width=3.992
+
+2025-09-30 01:48:54,751 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,751 - INFO -   epsilon=0.1, rho=0.1: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,751 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,751 - INFO -   epsilon=0.1, rho=0.2: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958
+
+2025-09-30 01:48:54,751 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.925, Width=4.792
+
+2025-09-30 01:48:54,751 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,751 - INFO -   epsilon=0.5, rho=0.1: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,751 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,751 - INFO -   epsilon=0.5, rho=0.2: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,752 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958
+
+2025-09-30 01:48:54,752 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.962, Width=5.792
+
+2025-09-30 01:48:54,752 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,752 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,752 - INFO -   epsilon=1.0, rho=0.1: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,752 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,752 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,752 - INFO -   epsilon=1.0, rho=0.2: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,752 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.5512
+
+2025-09-30 01:48:54,754 - INFO - Experiment completed successfully
+
+{
+
+"experimentStatusCode": 200,
+
+"body": {
+
+"message": "Experiment completed successfully",
+
+"returncode": 0,
+
+"stdout": "\n================================================================================\nFINAL EXPERIMENT RESULTS\n================================================================================\n\nCOVARIATE SHIFT RESULTS:\n--------------------------------------------------\n  (\u03b5=0.1, \u03c1=0.05): Coverage=0.818, Width=3.992\n  (\u03b5=0.1, \u03c1=0.1): Coverage=0.977, Width=7.705\n  (\u03b5=0.1, \u03c1=0.2): Coverage=0.977, Width=7.705\n  (\u03b5=0.5, \u03c1=0.05): Coverage=0.889, Width=4.792\n  (\u03b5=0.5, \u03c1=0.1): Coverage=0.977, Width=7.705\n  (\u03b5=0.5, \u03c1=0.2): Coverage=0.977, Width=7.705\n  (\u03b5=1.0, \u03c1=0.05): Coverage=0.928, Width=5.792\n  (\u03b5=1.0, \u03c1=0.1): Coverage=0.977, Width=7.705\n  (\u03b5=1.0, \u03c1=0.2): Coverage=0.977, Width=7.705\n\n  BEST CONFIG: \u03b5=0.5, \u03c1=0.05\n  Coverage: 0.889, Interval Width: 4.792\n\nLABEL SHIFT RESULTS:\n--------------------------------------------------\n  (\u03b5=0.1, \u03c1=0.05): Coverage=0.958, Width=3.992\n  (\u03b5=0.1, \u03c1=0.1): Coverage=1.000, Width=7.705\n  (\u03b5=0.1, \u03c1=0.2): Coverage=1.000, Width=7.705\n  (\u03b5=0.5, \u03c1=0.05): Coverage=0.978, Width=4.792\n  (\u03b5=0.5, \u03c1=0.1): Coverage=1.000, Width=7.705\n  (\u03b5=0.5, \u03c1=0.2): Coverage=1.000, Width=7.705\n  (\u03b5=1.0, \u03c1=0.05): Coverage=0.994, Width=5.792\n  (\u03b5=1.0, \u03c1=0.1): Coverage=1.000, Width=7.705\n  (\u03b5=1.0, \u03c1=0.2): Coverage=1.000, Width=7.705\n\n  BEST CONFIG: \u03b5=0.1, \u03c1=0.05\n  Coverage: 0.958, Interval Width: 3.992\n\nMIXED SHIFT RESULTS:\n--------------------------------------------------\n  (\u03b5=0.1, \u03c1=0.05): Coverage=0.871, Width=3.992\n  (\u03b5=0.1, \u03c1=0.1): Coverage=0.997, Width=7.705\n  (\u03b5=0.1, \u03c1=0.2): Coverage=0.997, Width=7.705\n  (\u03b5=0.5, \u03c1=0.05): Coverage=0.925, Width=4.792\n  (\u03b5=0.5, \u03c1=0.1): Coverage=0.997, Width=7.705\n  (\u03b5=0.5, \u03c1=0.2): Coverage=0.997, Width=7.705\n  (\u03b5=1.0, \u03c1=0.05): Coverage=0.962, Width=5.792\n  (\u03b5=1.0, \u03c1=0.1): Coverage=0.997, Width=7.705\n  (\u03b5=1.0, \u03c1=0.2): Coverage=0.997, Width=7.705\n\n  BEST CONFIG: \u03b5=0.1, \u03c1=0.05\n  Coverage: 0.871, Interval Width: 3.992\n\n================================================================================\nCOMPARISON WITH STANDARD CONFORMAL PREDICTION\n================================================================================\n\nCOVARIATE SHIFT:\n  Standard CP: Coverage=0.725, Width=3.102\n  Best LP Robust: Coverage=0.889, Width=4.792\n  Improvement: Coverage +0.164, Width Ratio: 1.544\n\nLABEL SHIFT:\n  Standard CP: Coverage=0.852, Width=3.102\n  Best LP Robust: Coverage=0.958, Width=3.992\n  Improvement: Coverage +0.106, Width Ratio: 1.287\n\nMIXED SHIFT:\n  Standard CP: Coverage=0.786, Width=3.102\n  Best LP Robust: Coverage=0.871, Width=3.992\n  Improvement: Coverage +0.085, Width Ratio: 1.287\n",
+
+"stderr": "2025-09-30 01:48:53,783 - INFO - Starting LP Robust Conformal Prediction Experiment for Time Series\n2025-09-30 01:48:54,497 - INFO - Generating stationary calibration data...\n2025-09-30 01:48:54,498 - INFO - \nTesting covariate shift...\n2025-09-30 01:48:54,745 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958\n2025-09-30 01:48:54,745 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.818, Width=3.992\n2025-09-30 01:48:54,745 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,745 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,745 - INFO -   epsilon=0.1, rho=0.1: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,745 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,745 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,746 - INFO -   epsilon=0.1, rho=0.2: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958\n2025-09-30 01:48:54,746 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.889, Width=4.792\n2025-09-30 01:48:54,746 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,746 - INFO -   epsilon=0.5, rho=0.1: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,746 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,746 - INFO -   epsilon=0.5, rho=0.2: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958\n2025-09-30 01:48:54,746 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.928, Width=5.792\n2025-09-30 01:48:54,746 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,746 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,747 - INFO -   epsilon=1.0, rho=0.1: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,747 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,747 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,747 - INFO -   epsilon=1.0, rho=0.2: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,747 - INFO - \nTesting label shift...\n2025-09-30 01:48:54,747 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958\n2025-09-30 01:48:54,747 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.958, Width=3.992\n2025-09-30 01:48:54,747 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,748 - INFO -   epsilon=0.1, rho=0.1: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,748 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,748 - INFO -   epsilon=0.1, rho=0.2: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958\n2025-09-30 01:48:54,748 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.978, Width=4.792\n2025-09-30 01:48:54,748 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,748 - INFO -   epsilon=0.5, rho=0.1: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,748 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,748 - INFO -   epsilon=0.5, rho=0.2: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,748 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958\n2025-09-30 01:48:54,748 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.994, Width=5.792\n2025-09-30 01:48:54,749 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,750 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,750 - INFO -   epsilon=1.0, rho=0.1: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,750 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,750 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,750 - INFO -   epsilon=1.0, rho=0.2: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,750 - INFO - \nTesting mixed shift...\n2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958\n2025-09-30 01:48:54,751 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.871, Width=3.992\n2025-09-30 01:48:54,751 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,751 - INFO -   epsilon=0.1, rho=0.1: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,751 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,751 - INFO -   epsilon=0.1, rho=0.2: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958\n2025-09-30 01:48:54,751 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.925, Width=4.792\n2025-09-30 01:48:54,751 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,751 - INFO -   epsilon=0.5, rho=0.1: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,751 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,751 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,751 - INFO -   epsilon=0.5, rho=0.2: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,752 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958\n2025-09-30 01:48:54,752 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.962, Width=5.792\n2025-09-30 01:48:54,752 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,752 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,752 - INFO -   epsilon=1.0, rho=0.1: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,752 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,752 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,752 - INFO -   epsilon=1.0, rho=0.2: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,752 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.5512\n2025-09-30 01:48:54,754 - INFO - Experiment completed successfully\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 3155.90 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+
+=== Experiment Output ===
+
+================================================================================
+
+FINAL EXPERIMENT RESULTS
+
+================================================================================
+
+COVARIATE SHIFT RESULTS:
+
+--------------------------------------------------
+
+(ε=0.1, ρ=0.05): Coverage=0.818, Width=3.992
+
+(ε=0.1, ρ=0.1): Coverage=0.977, Width=7.705
+
+(ε=0.1, ρ=0.2): Coverage=0.977, Width=7.705
+
+(ε=0.5, ρ=0.05): Coverage=0.889, Width=4.792
+
+(ε=0.5, ρ=0.1): Coverage=0.977, Width=7.705
+
+(ε=0.5, ρ=0.2): Coverage=0.977, Width=7.705
+
+(ε=1.0, ρ=0.05): Coverage=0.928, Width=5.792
+
+(ε=1.0, ρ=0.1): Coverage=0.977, Width=7.705
+
+(ε=1.0, ρ=0.2): Coverage=0.977, Width=7.705
+
+BEST CONFIG: ε=0.5, ρ=0.05
+
+Coverage: 0.889, Interval Width: 4.792
+
+LABEL SHIFT RESULTS:
+
+--------------------------------------------------
+
+(ε=0.1, ρ=0.05): Coverage=0.958, Width=3.992
+
+(ε=0.1, ρ=0.1): Coverage=1.000, Width=7.705
+
+(ε=0.1, ρ=0.2): Coverage=1.000, Width=7.705
+
+(ε=0.5, ρ=0.05): Coverage=0.978, Width=4.792
+
+(ε=0.5, ρ=0.1): Coverage=1.000, Width=7.705
+
+(ε=0.5, ρ=0.2): Coverage=1.000, Width=7.705
+
+(ε=1.0, ρ=0.05): Coverage=0.994, Width=5.792
+
+(ε=1.0, ρ=0.1): Coverage=1.000, Width=7.705
+
+(ε=1.0, ρ=0.2): Coverage=1.000, Width=7.705
+
+BEST CONFIG: ε=0.1, ρ=0.05
+
+Coverage: 0.958, Interval Width: 3.992
+
+MIXED SHIFT RESULTS:
+
+--------------------------------------------------
+
+(ε=0.1, ρ=0.05): Coverage=0.871, Width=3.992
+
+(ε=0.1, ρ=0.1): Coverage=0.997, Width=7.705
+
+(ε=0.1, ρ=0.2): Coverage=0.997, Width=7.705
+
+(ε=0.5, ρ=0.05): Coverage=0.925, Width=4.792
+
+(ε=0.5, ρ=0.1): Coverage=0.997, Width=7.705
+
+(ε=0.5, ρ=0.2): Coverage=0.997, Width=7.705
+
+(ε=1.0, ρ=0.05): Coverage=0.962, Width=5.792
+
+(ε=1.0, ρ=0.1): Coverage=0.997, Width=7.705
+
+(ε=1.0, ρ=0.2): Coverage=0.997, Width=7.705
+
+BEST CONFIG: ε=0.1, ρ=0.05
+
+Coverage: 0.871, Interval Width: 3.992
+
+================================================================================
+
+COMPARISON WITH STANDARD CONFORMAL PREDICTION
+
+================================================================================
+
+COVARIATE SHIFT:
+
+Standard CP: Coverage=0.725, Width=3.102
+
+Best LP Robust: Coverage=0.889, Width=4.792
+
+Improvement: Coverage +0.164, Width Ratio: 1.544
+
+LABEL SHIFT:
+
+Standard CP: Coverage=0.852, Width=3.102
+
+Best LP Robust: Coverage=0.958, Width=3.992
+
+Improvement: Coverage +0.106, Width Ratio: 1.287
+
+MIXED SHIFT:
+
+Standard CP: Coverage=0.786, Width=3.102
+
+Best LP Robust: Coverage=0.871, Width=3.992
+
+Improvement: Coverage +0.085, Width Ratio: 1.287
+
+=== Experiment Errors ===
+
+2025-09-30 01:48:54,940 - INFO - Starting LP Robust Conformal Prediction Experiment for Time Series
+
+2025-09-30 01:48:54,958 - INFO - Generating stationary calibration data...
+
+2025-09-30 01:48:54,959 - INFO - 
+
+Testing covariate shift...
+
+2025-09-30 01:48:54,974 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958
+
+2025-09-30 01:48:54,975 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.818, Width=3.992
+
+2025-09-30 01:48:54,975 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,975 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,975 - INFO -   epsilon=0.1, rho=0.1: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,975 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,975 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,975 - INFO -   epsilon=0.1, rho=0.2: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,975 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958
+
+2025-09-30 01:48:54,975 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.889, Width=4.792
+
+2025-09-30 01:48:54,975 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,975 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,975 - INFO -   epsilon=0.5, rho=0.1: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,975 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,976 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,976 - INFO -   epsilon=0.5, rho=0.2: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,976 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958
+
+2025-09-30 01:48:54,976 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.928, Width=5.792
+
+2025-09-30 01:48:54,976 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,976 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,976 - INFO -   epsilon=1.0, rho=0.1: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,976 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,976 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,976 - INFO -   epsilon=1.0, rho=0.2: Coverage=0.977, Width=7.705
+
+2025-09-30 01:48:54,976 - INFO - 
+
+Testing label shift...
+
+2025-09-30 01:48:54,977 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958
+
+2025-09-30 01:48:54,977 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.958, Width=3.992
+
+2025-09-30 01:48:54,977 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,977 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,977 - INFO -   epsilon=0.1, rho=0.1: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,977 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,977 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,977 - INFO -   epsilon=0.1, rho=0.2: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,977 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958
+
+2025-09-30 01:48:54,977 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.978, Width=4.792
+
+2025-09-30 01:48:54,978 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,978 - INFO -   epsilon=0.5, rho=0.1: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,978 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,978 - INFO -   epsilon=0.5, rho=0.2: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958
+
+2025-09-30 01:48:54,978 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.994, Width=5.792
+
+2025-09-30 01:48:54,978 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,978 - INFO -   epsilon=1.0, rho=0.1: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,978 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,978 - INFO -   epsilon=1.0, rho=0.2: Coverage=1.000, Width=7.705
+
+2025-09-30 01:48:54,978 - INFO - 
+
+Testing mixed shift...
+
+2025-09-30 01:48:54,979 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958
+
+2025-09-30 01:48:54,979 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.871, Width=3.992
+
+2025-09-30 01:48:54,979 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,979 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,979 - INFO -   epsilon=0.1, rho=0.1: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,979 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,979 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,979 - INFO -   epsilon=0.1, rho=0.2: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,979 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958
+
+2025-09-30 01:48:54,980 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.925, Width=4.792
+
+2025-09-30 01:48:54,980 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,980 - INFO -   epsilon=0.5, rho=0.1: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,980 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,980 - INFO -   epsilon=0.5, rho=0.2: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958
+
+2025-09-30 01:48:54,980 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.962, Width=5.792
+
+2025-09-30 01:48:54,980 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,980 - INFO -   epsilon=1.0, rho=0.1: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,980 - WARNING - rho >= 1-beta, quantile becomes trivial
+
+2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527
+
+2025-09-30 01:48:54,980 - INFO -   epsilon=1.0, rho=0.2: Coverage=0.997, Width=7.705
+
+2025-09-30 01:48:54,981 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.5512
+
+2025-09-30 01:48:54,982 - INFO - Experiment completed successfully
+
+{
+
+"experimentStatusCode": 200,
+
+"body": {
+
+"message": "Experiment completed successfully",
+
+"returncode": 0,
+
+"stdout": "\n================================================================================\nFINAL EXPERIMENT RESULTS\n================================================================================\n\nCOVARIATE SHIFT RESULTS:\n--------------------------------------------------\n  (\u03b5=0.1, \u03c1=0.05): Coverage=0.818, Width=3.992\n  (\u03b5=0.1, \u03c1=0.1): Coverage=0.977, Width=7.705\n  (\u03b5=0.1, \u03c1=0.2): Coverage=0.977, Width=7.705\n  (\u03b5=0.5, \u03c1=0.05): Coverage=0.889, Width=4.792\n  (\u03b5=0.5, \u03c1=0.1): Coverage=0.977, Width=7.705\n  (\u03b5=0.5, \u03c1=0.2): Coverage=0.977, Width=7.705\n  (\u03b5=1.0, \u03c1=0.05): Coverage=0.928, Width=5.792\n  (\u03b5=1.0, \u03c1=0.1): Coverage=0.977, Width=7.705\n  (\u03b5=1.0, \u03c1=0.2): Coverage=0.977, Width=7.705\n\n  BEST CONFIG: \u03b5=0.5, \u03c1=0.05\n  Coverage: 0.889, Interval Width: 4.792\n\nLABEL SHIFT RESULTS:\n--------------------------------------------------\n  (\u03b5=0.1, \u03c1=0.05): Coverage=0.958, Width=3.992\n  (\u03b5=0.1, \u03c1=0.1): Coverage=1.000, Width=7.705\n  (\u03b5=0.1, \u03c1=0.2): Coverage=1.000, Width=7.705\n  (\u03b5=0.5, \u03c1=0.05): Coverage=0.978, Width=4.792\n  (\u03b5=0.5, \u03c1=0.1): Coverage=1.000, Width=7.705\n  (\u03b5=0.5, \u03c1=0.2): Coverage=1.000, Width=7.705\n  (\u03b5=1.0, \u03c1=0.05): Coverage=0.994, Width=5.792\n  (\u03b5=1.0, \u03c1=0.1): Coverage=1.000, Width=7.705\n  (\u03b5=1.0, \u03c1=0.2): Coverage=1.000, Width=7.705\n\n  BEST CONFIG: \u03b5=0.1, \u03c1=0.05\n  Coverage: 0.958, Interval Width: 3.992\n\nMIXED SHIFT RESULTS:\n--------------------------------------------------\n  (\u03b5=0.1, \u03c1=0.05): Coverage=0.871, Width=3.992\n  (\u03b5=0.1, \u03c1=0.1): Coverage=0.997, Width=7.705\n  (\u03b5=0.1, \u03c1=0.2): Coverage=0.997, Width=7.705\n  (\u03b5=0.5, \u03c1=0.05): Coverage=0.925, Width=4.792\n  (\u03b5=0.5, \u03c1=0.1): Coverage=0.997, Width=7.705\n  (\u03b5=0.5, \u03c1=0.2): Coverage=0.997, Width=7.705\n  (\u03b5=1.0, \u03c1=0.05): Coverage=0.962, Width=5.792\n  (\u03b5=1.0, \u03c1=0.1): Coverage=0.997, Width=7.705\n  (\u03b5=1.0, \u03c1=0.2): Coverage=0.997, Width=7.705\n\n  BEST CONFIG: \u03b5=0.1, \u03c1=0.05\n  Coverage: 0.871, Interval Width: 3.992\n\n================================================================================\nCOMPARISON WITH STANDARD CONFORMAL PREDICTION\n================================================================================\n\nCOVARIATE SHIFT:\n  Standard CP: Coverage=0.725, Width=3.102\n  Best LP Robust: Coverage=0.889, Width=4.792\n  Improvement: Coverage +0.164, Width Ratio: 1.544\n\nLABEL SHIFT:\n  Standard CP: Coverage=0.852, Width=3.102\n  Best LP Robust: Coverage=0.958, Width=3.992\n  Improvement: Coverage +0.106, Width Ratio: 1.287\n\nMIXED SHIFT:\n  Standard CP: Coverage=0.786, Width=3.102\n  Best LP Robust: Coverage=0.871, Width=3.992\n  Improvement: Coverage +0.085, Width Ratio: 1.287\n",
+
+"stderr": "2025-09-30 01:48:54,940 - INFO - Starting LP Robust Conformal Prediction Experiment for Time Series\n2025-09-30 01:48:54,958 - INFO - Generating stationary calibration data...\n2025-09-30 01:48:54,959 - INFO - \nTesting covariate shift...\n2025-09-30 01:48:54,974 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958\n2025-09-30 01:48:54,975 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.818, Width=3.992\n2025-09-30 01:48:54,975 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,975 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,975 - INFO -   epsilon=0.1, rho=0.1: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,975 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,975 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,975 - INFO -   epsilon=0.1, rho=0.2: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,975 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958\n2025-09-30 01:48:54,975 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.889, Width=4.792\n2025-09-30 01:48:54,975 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,975 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,975 - INFO -   epsilon=0.5, rho=0.1: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,975 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,976 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,976 - INFO -   epsilon=0.5, rho=0.2: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,976 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958\n2025-09-30 01:48:54,976 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.928, Width=5.792\n2025-09-30 01:48:54,976 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,976 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,976 - INFO -   epsilon=1.0, rho=0.1: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,976 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,976 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,976 - INFO -   epsilon=1.0, rho=0.2: Coverage=0.977, Width=7.705\n2025-09-30 01:48:54,976 - INFO - \nTesting label shift...\n2025-09-30 01:48:54,977 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958\n2025-09-30 01:48:54,977 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.958, Width=3.992\n2025-09-30 01:48:54,977 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,977 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,977 - INFO -   epsilon=0.1, rho=0.1: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,977 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,977 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,977 - INFO -   epsilon=0.1, rho=0.2: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,977 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958\n2025-09-30 01:48:54,977 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.978, Width=4.792\n2025-09-30 01:48:54,978 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,978 - INFO -   epsilon=0.5, rho=0.1: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,978 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,978 - INFO -   epsilon=0.5, rho=0.2: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958\n2025-09-30 01:48:54,978 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.994, Width=5.792\n2025-09-30 01:48:54,978 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,978 - INFO -   epsilon=1.0, rho=0.1: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,978 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,978 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,978 - INFO -   epsilon=1.0, rho=0.2: Coverage=1.000, Width=7.705\n2025-09-30 01:48:54,978 - INFO - \nTesting mixed shift...\n2025-09-30 01:48:54,979 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.9958\n2025-09-30 01:48:54,979 - INFO -   epsilon=0.1, rho=0.05: Coverage=0.871, Width=3.992\n2025-09-30 01:48:54,979 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,979 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,979 - INFO -   epsilon=0.1, rho=0.1: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,979 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,979 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,979 - INFO -   epsilon=0.1, rho=0.2: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,979 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.3958\n2025-09-30 01:48:54,980 - INFO -   epsilon=0.5, rho=0.05: Coverage=0.925, Width=4.792\n2025-09-30 01:48:54,980 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,980 - INFO -   epsilon=0.5, rho=0.1: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,980 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,980 - INFO -   epsilon=0.5, rho=0.2: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 2.8958\n2025-09-30 01:48:54,980 - INFO -   epsilon=1.0, rho=0.05: Coverage=0.962, Width=5.792\n2025-09-30 01:48:54,980 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,980 - INFO -   epsilon=1.0, rho=0.1: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,980 - WARNING - rho >= 1-beta, quantile becomes trivial\n2025-09-30 01:48:54,980 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 3.8527\n2025-09-30 01:48:54,980 - INFO -   epsilon=1.0, rho=0.2: Coverage=0.997, Width=7.705\n2025-09-30 01:48:54,981 - INFO - Fitted LP robust conformal predictor with worst-case quantile: 1.5512\n2025-09-30 01:48:54,982 - INFO - Experiment completed successfully\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 208.84 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+
+START RequestId: ee535ae9-b278-47c0-ba11-5afdd0605d89 Version: $LATEST
+
+RequestId: ee535ae9-b278-47c0-ba11-5afdd0605d89 Error: Runtime exited without providing a reason
+Runtime.ExitError
+
+END RequestId: ee535ae9-b278-47c0-ba11-5afdd0605d89
+
+REPORT RequestId: ee535ae9-b278-47c0-ba11-5afdd0605d89	Duration: 211.08 ms	Billed Duration: 212 ms	Memory Size: 3008 MB	Max Memory Used: 25 MB	
+
